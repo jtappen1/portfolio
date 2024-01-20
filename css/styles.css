@@ -10,6 +10,18 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+.pic-bg{
+  background-color: rgba(180, 164, 195, .3);
+}
+
+.wcr-pics{
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom:15px;
+}
+
+
 .footer-height{
   height: 30px;
 }
@@ -2987,7 +2999,7 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #000000;
+  --bs-btn-bg: #212528;
   --bs-btn-border-color: #9d8baf;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #6778ab;
