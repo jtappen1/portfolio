@@ -329,60 +329,60 @@
                 duration: 0.8,
                 ease: "back.out(1.7)",
             });
-            const experienceSection = document.querySelector(".experience-section");
-            gsap.from(experienceSection, {
-                opacity: 0,
-                y: 15,
-                duration: 2,
-                stagger: 0.3,
-                scrollTrigger: {
-                    trigger: experienceSection,
-                    start: "top 80%",
-                    toggleActions: "play none none reverse",
-                    },
-            });
+            // const experienceSection = document.querySelector(".experience-section");
+            // gsap.from(experienceSection, {
+            //     opacity: 0,
+            //     y: 15,
+            //     duration: 2,
+            //     stagger: 0.3,
+            //     scrollTrigger: {
+            //         trigger: experienceSection,
+            //         start: "top 80%",
+            //         toggleActions: "play none none reverse",
+            //         },
+            // });
         
-            const educationSection = document.querySelector(".education-section");
-            // Set up the GSAP animation
-            gsap.from(educationSection, {
-                opacity: .5,
-                y: 15, // Slide up effect
-                duration: 2,
-                ease: "power2.out",
-                scrollTrigger: {
-                trigger: educationSection,
-                start: "top 80%", // When the top of the section hits 75% of the viewport height
-                toggleActions: "play none none reverse", // Play animation when in view, reverse when out of view
-                },
-            });
-            const connectSection = document.querySelector(".connect-section");
-            // Set up the GSAP animation
-            gsap.from(connectSection, {
-                opacity: 0,
-                y: 15, // Slide up effect
-                duration: 2,
-                ease: "power2.out",
-                scrollTrigger: {
-                trigger: connectSection,
-                start: "top 80%", // When the top of the section hits 75% of the viewport height
-                toggleActions: "play none none reverse", // Play animation when in view, reverse when out of view
-                },
-            });
-            const skillSections = gsap.utils.toArray(".skill-section");
+            // const educationSection = document.querySelector(".education-section");
+            // // Set up the GSAP animation
+            // gsap.from(educationSection, {
+            //     opacity: .5,
+            //     y: 15, // Slide up effect
+            //     duration: 2,
+            //     ease: "power2.out",
+            //     scrollTrigger: {
+            //     trigger: educationSection,
+            //     start: "top 80%", // When the top of the section hits 75% of the viewport height
+            //     toggleActions: "play none none reverse", // Play animation when in view, reverse when out of view
+            //     },
+            // });
+            // const connectSection = document.querySelector(".connect-section");
+            // // Set up the GSAP animation
+            // gsap.from(connectSection, {
+            //     opacity: 0,
+            //     y: 15, // Slide up effect
+            //     duration: 2,
+            //     ease: "power2.out",
+            //     scrollTrigger: {
+            //     trigger: connectSection,
+            //     start: "top 80%", // When the top of the section hits 75% of the viewport height
+            //     toggleActions: "play none none reverse", // Play animation when in view, reverse when out of view
+            //     },
+            // });
+            // const skillSections = gsap.utils.toArray(".skill-section");
 
-            // Animate each skill section with a staggered effect
-            gsap.from(skillSections, {
-                opacity: 0,
-                y: 50,
-                duration: 2,
-                ease: "power2.out",
-                stagger: 0.3, // Stagger delay between animations
-                scrollTrigger: {
-                trigger: ".skills-section",
-                start: "top 75%",
-                toggleActions: "play none none reverse",
-                },
-            });
+            // // Animate each skill section with a staggered effect
+            // gsap.from(skillSections, {
+            //     opacity: 0,
+            //     y: 50,
+            //     duration: 2,
+            //     ease: "power2.out",
+            //     stagger: 0.3, // Stagger delay between animations
+            //     scrollTrigger: {
+            //     trigger: ".skills-section",
+            //     start: "top 75%",
+            //     toggleActions: "play none none reverse",
+            //     },
+            // });
     });
         
     </script>
@@ -417,11 +417,6 @@
                                                     
                                                 </ul>
                                             </div>
-                                           
-                                            <!-- <p>▪ Data: We used a subset of WikText-2 to do our data run, specifically the smallest subset called wikitext-2-v1.  This will allow us to hopefully get a good baseline without spending too much time on training each model.</p>
-                                            <p>▪ Models: We are training a total of 54 models, 27 RetNet models and 27 Transformer models.  We preforming a grid search, comparing 3 hyper-parameters, testing 3 different values for each hyper-parameter.  The parameters we are testing are batch size, embed dimension, learning rate, while tracking time to train and the average loss for each model.  We will be running a comparison on these models to see the differences, which is the role of the benchmarks group.  This data run will not include the testing of benchmarks, we will do that after we have received the 54 models back.   Benchmarks is ready however, and as soon as the run is over they will begin their testing.  We hope to have the functionality to run benchmarks as soon as the models are done training integrated into main soon. </p>
-                                            <p>▪Outcome: The hoped for outcome is that we will have models that we can analyze to find large differences between transformer and retnet models, which conducting a fair and equal comparison.  This will let us know what else we need to do to train from scratch and help us determine if our project has potential moving forward.</p>
-                                            <p>A very small scale model of our Retention Based Network is below</p> -->
                                         </div>
                                     </div>
                                 </div>
