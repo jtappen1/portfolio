@@ -18,105 +18,176 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container px-4">
                 <a class="navbar-brand" href="#page-top">JTAPPEN</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class=" nav navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#page-top">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                         <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                         <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#connect">Connect</a></li>
-                        
                     </ul>
                 </div>
             </div>
         </nav>
+        <script src="js/navbar.js"></script>
         
-        <!-- Header-->
         <header class="masthead d-flex align-items-center">
             <div class="container px-4 px-lg-5 text-center">
-                <h1 class="mb-1 text-light ">John Tappen Portfolio</h1>
-                <h3 class="mb-5 text-light"><em>Senior Computer Science Student: BYU Dec 2024  ||  Aspiring Software & Machine Learning Engineer</em></h3>
+                <h1 class="heading-name mb-1 text-light ">John Tappen Portfolio</h1>
+                <h3 class="heading-intro mb-5 text-light"><em>Senior Computer Science Student: BYU Dec 2024  ||  Software Engineer II at Butlr</em></h3>
                 <div class="social-icons">
                     <a class="social-icon" href="https://www.linkedin.com/in/john-tappen-45a286284/"><i class="fab fa-linkedin-in"></i></a>
                     <a class="social-icon" href="https://github.com/jtappen1"><i class="fab fa-github"></i></a>
-                    <a class="social-icon" href="https://www.instagram.com/jtappen_/"><i class="fab fa-instagram"></i></a>
-                    <a class="social-icon" href="https://www.facebook.com/profile.php?id=100007654157779"><i class="fab fa-facebook-f"></i></a>
+
                 </div>
                 <div class="masthead-button ">
-                    <a class="btn btn-primary btn-xl" href="#experience">Find Out More</a>
+                    <a class="btn btn-primary btn-xl" href="#portfolio">Find Out More</a>
                 </div>
                 
             </div>
+            <script src="js/changeBackground.js"></script>
         </header>
+
+        <section class="content-section portfolio-section" id="portfolio">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading text-center">
+                    <h3 class="text-secondary mb-0">Experience</h3>
+                    <h2 class="mb-5">Portfolio</h2>
+                </div>
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h1 text-light-grey">Software Engineering Internship</div>
+                                    <p class="mb-0 text-light-grey text-light"> Experience as a Software Engineering Intern at BUTLR
+                                    </p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/butlr_sensor.jpeg" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h1 text-light-grey">AI & LLM Research</div>
+                                    <p class="mb-0 text-light text-light-grey">Working with a research team at BYU's DRAGN Lab to conduct research into Retentive Networks in Large Language Models. </p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/coding.jpg" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h1 text-light-grey">WordCruncher iOS App</div>
+                                    <p class="mb-0 text-light text-light-grey">Developer on BYU WordCruncher Application</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/wordCruncherIMG.png" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal7">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h1 text-light-grey">Homebase Personal Project</div>
+                                    <p class="mb-0 text-light text-light-grey">Trip Planning and Optimization</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/HomebaseCoverPic.jpg" alt="..." />
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
         
-        <section class="content-section portfolio pic-bg " id="experience">
+        <section class="content-section portfolio experience-section " id="experience">
             <div class="container ">
                 <div class="content-section-heading text-center">
                     <h3 class=" text-secondary mb-0">Resume</h3>
                     <h2 class = "resume-title">Work Experience</h2>
                 </div>
-                <!-- Icon Divider-->
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid pic-bg" src="assets/img/wordCruncherIMG.png" alt="..." />
-                        </div>
-                        <h3 class = "text-center subtitle-padding"> iOS Developer: WordCruncher</h3>
+                <div class="experience-grid">
+                    <div class="experience-item">
+                        <h3>Software Engineering Intern</h3>
+                        <p>Seattle, WA</p>
+                        <p><strong>Butlr</strong> | May 2024 – Aug 2024</p>
+                        <ul>
+                            <li>Developed a full-stack data-streaming visualization web application for aiding installation and debugging of Butlr’s occupancy tracking heat sensors. Went from onboarding to shipping for internal use within 6 weeks.</li>
+                            <li>Trained a Convolutional Neural Network (CNN) to classify occupancy detections, achieving 98% accuracy and reducing production AWS costs by 50%.</li>
+                            <li>Collaborated with Senior Engineers to extend sensor support to MQTT and Pulsar Protocols for Heatic 2+ Sensors.</li>
+                            <li>Participated in weekly sprints, following AGILE methodologies and CI/CD using GitHub Workflows.</li>
+                            <li>Performed a companywide demo on Visualizer tool and CNN.</li>
+                        </ul>
                     </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid pic-bg" src="assets/img/AiPic.jpg" alt="..." />
-                        </div>
-                        <h3 class = "text-center subtitle-padding"> Student Researcher in AI & Large Language Models</h3>
+                    <div class="experience-item">
+                        <h3>Research Assistant in A.I. & Large Language Models</h3>
+                        <p>Provo, UT</p>
+                        <p><strong>Brigham Young University</strong> | Aug 2023 – May 2024</p>
+                        <ul>
+                            <li>Trained multiple 3 billion parameter Transformer, RetNet, Linformer, and Performer NLP models on remote, multi-GPU machines under the direction of Professor Nancy Fulda.</li>
+                            <li>Created a cross-model benchmark evaluation suite for comparison of 5 different language model architectures.</li>
+                            <li>Responsible for training over 50 models from scratch, using PyTorch and HuggingFace Libraries.</li>
+                            <li>Presented research in Transformer architecture cross-comparisons at the BYU Student Research Conference.</li>
+                        </ul>
                     </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid pic-bg" src="assets/img/TA-pic.jpg" alt="..." />
-                        </div>
-                        <h3 class = "text-center subtitle-padding"> Teaching Assistant: Algorithm Design & Analysis</h3>
+                    <div class="experience-item">
+                        <h3>Teaching Assistant: Algorithm Design and Analysis</h3>
+                        <p>Provo, UT</p>
+                        <p><strong>Brigham Young University</strong> | Jan 2024 – May 2024</p>
+                        <ul>
+                            <li>Taught and assisted 125 students in their implementation and design of common algorithms in Computer Science.</li>
+                            <li>Communicated clearly with professors, TAs, and students through weekly meetings.</li>
+                            <li>Developed and delivered engaging lab sessions, enhancing students' understanding of computer science concepts.</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <h3>iOS Developer</h3>
+                        <p>Provo, UT</p>
+                        <p><strong>Brigham Young University</strong> | Jan 2023 – Jan 2024</p>
+                        <ul>
+                            <li>Designed and developed an iOS version of WordCruncher, an E-Text app similar to the Kindle application.</li>
+                            <li>Built a user-friendly UI with secure account features, bookstore/library capabilities, and a Kindle-like reading experience.</li>
+                            <li>Collaborated with a 3-person development team, ensuring smooth integration and functionality across app components.</li>
+                        </ul>
                     </div>
                 </div>
-                
             </div>
-            
         </section>
         
         <!-- Services-->
-        <section class="content-section bg-background text-white text-center" id="education">
+        <section class="content-section education-section text-white text-center" id="education">
             <div class="container px-4 px-lg-5">
-                <div class="content-section-heading">
-                    <h2 class="mb-4 subtitle-padding-b">Education</h2>
+                <div class="content-section-heading text-center">
+                    <h3 class="text-secondary mb-0">Portfolio</h3>
+                    <h2 class="mb-5 h2">Education & Activities</h2>
                 </div>
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="fa-solid fa-graduation-cap"></i></span>
                         <h4><strong>Degree</strong></h4>
-                        <p class="text-faded mb-0">Bachelor of Science in Computer Science </p>
-                        <p class="text-faded mb-0">Cumulative GPA: 3.87</p>
-                        <p class="text-faded mb-0">Major GPA: 3.88</p>
+                        <p class="text-faded mb-0">Bachelors of Science: Computer Science </p>
+                        <p class="text-faded mb-0" style="padding-top: 15px;">Cumulative GPA: 3.9</p>
+                        <p class="text-faded mb-0">Major GPA: 3.9</p>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="fa-solid fa-award"></i></span>
                         <h4><strong>Accolades</strong></h4>
-                        <p class="text-faded mb-0">Recipient of the Brigham Young University Academic Scholarship: Awarded 2019 - 2024</p>
+                        <p class="text-faded mb-0">Recipient of the BYU Academic Scholarship: Awarded 2019 - 2024</p>
+                        <p class = "text-faded mb-0" style="padding-top: 15px;">Deans List BYU: 2021 - 2024 </p>
+                        <p class = "text-faded mb-0">(Top 5% of Program) </p>
+                        
+
                         
                     </div>
                     <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
@@ -130,7 +201,7 @@
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="fa-solid fa-book"></i></span>
                         <h4><strong>Relevant Coursework</strong></h4>
                         <p class="text-faded mb-0">Data Structures, Algorithm Design and Analysis, Software Design, Advanced
-                            Programming Concepts, Web Development, Research in A.I. and Large Language Models</p>
+                            Programming Concepts, Web Development, Software Engineering</p>
                     </div>
                 </div>
             </div>
@@ -138,93 +209,71 @@
         </section>
 
         <!-- Skills -->
-        <section class="content-section bg-dark text-white" id = "skills">
+        <section class="content-section skills-section text-white" id = "skills">
             <div class="container px-4 px-lg-5 text-center">
-                <h1 class="mb-4">Skills</h1>
-                <div class="row gx-4 gx-lg-5">
-                    <h5 class = "subtitle-padding text-faded">LANGUAGES – C++, Java, Python, PyTorch, Swift, HTML, CSS, JavaScript</h5>
-                    <h5 class ="subtitle-padding text-faded">TECHNOLOGIES - GitHub, SVN, AWS, Microsoft Office, HuggingFace</h5>
-                    <h5 class ="subtitle-padding text-faded">DEVELOPMENT - iOS Development, Web Development, AI/LLM & Machine Learning</h5>
-                    <h5 class ="subtitle-padding text-faded">MODERATE – C, React, MongoDB, AWS, TypeScript</h5>
-                </div>
-                <div class = "btn-padding-skills">
-                    <a class="btn btn-primary btn-xl" href="#portfolio">See Examples!</a>
-                </div>
-                
-            </div>
-        </section >
-    
-
-        <section class="content-section" id="portfolio">
-            <div class="container px-4 px-lg-5">
                 <div class="content-section-heading text-center">
                     <h3 class="text-secondary mb-0">Portfolio</h3>
-                    <h2 class="mb-5">Recent Projects</h2>
+                    <h2 class="mb-5">Skills & Technologies</h2>
                 </div>
-                <div class="row gx-0">
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">WordCruncher App</div>
-                                    <p class="mb-0">Redesigning and developing an iOS Version of the WordCruncher Application</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/william-hook-9e9PD9blAto-unsplash.jpg" alt="..." />
-                        </a>
+                <div class="skill-section">
+                    <h3>Languages</h3>
+                    <div class="skills-list justify-content-center">
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>PyTorch</span>
+                        <span>Swift</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Typescript</span>
                     </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">RetNet Research: Alternatives to Transformers</div>
-                                    <p class="mb-0">Working with a research team at BYU to conduct research into Retentive Networks in Large Language Models. </p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/aiPicPortfolio.jpg" alt="..." />
-                        </a>
+                </div>
+                <div class="skill-section">
+                    <h3>Technologies</h3>
+                    <div class="skills-list justify-content-center">
+                        <span>GitHub</span>
+                        <span>AWS</span>
+                        <span>Microsoft Office</span>
+                        <span>MongoDB</span>
+                        <span>DynamoDB</span>
                     </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">WebDevConnect</div>
-                                    <p class="mb-0"> Startup focused on Connecting Students and Startups
-                                    </p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/laptopPic.jpeg" alt="..." />
-                        </a>
+                </div>
+                <div class="skill-section">
+                    <h3>Development</h3>
+                    <div class="skills-list justify-content-center">
+                        <span>AI/LLM & Machine Learning</span>
+                        <span>Full Stack Development</span>
+                        <span>iOS Development</span>
+                        <span>Web Development</span>
+                        
                     </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal7">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">About Me - Music</div>
-                                    <p class="mb-0">Playing music with a local band</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/crowd.JPG" alt="..." />
-                        </a>
-                    </div>
-                    
                 </div>
             </div>
-        </section>
-        <!-- Call to Action-->
-        <section class="content-section bg-background text-white" id = "connect">
-            <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mb-4 text-center">Connect</h2>
-                <div class="col gx-4 gx-lg-5">
+        </section >
 
+        <section class="content-section connect-section text-white" id="connect">
+            <div class="container px-4 px-lg-5 text-center justify-content-center">
+                <div class="content-section-heading text-center">
+                    <h3 class="text-secondary mb-0">Portfolio</h3>
+                    <h2 class="mb-5 h2">Contact Me</h2>
                 </div>
-                <h3 class = "text-faded">Email : jtappen@gmail.com</h3>
-                <h3 class  = "text-faded">Phone : (425)-598-3449</h3>
-                <img class="pic-size" src="assets/img/HandshakePhoto.JPG" alt="..." />
-                <h3 class = "text-faded"> Thank you for your time! Feel free to reach out whenever, I look forward to meeting you.</h3>
-    
+                <img class="pic-size" src="assets/img/HandshakePhoto.JPG" alt="Profile Picture">
+                <div class="row contact-row">
+                    <div class="col-md-8">
+                        <div class="align-items-center">
+                            <h3 class="mb-3">Contact Information</h3>
+                            <button onclick="window.location.href='mailto:jtappen@gmail.com'" class="btn btn-primary" style="margin-right: 15px; padding-block: 10px;">Email Me</button>
+                            <button onclick="window.location.href='sms:+14255983449'" class="btn btn-primary" style="margin-left: 15px; padding-block: 10px;">Text Me</button>
+                            <p class="message mt-4">Thank you for your time! Feel free to reach out whenever, I look forward to meeting you.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+        
+        
         <!-- Footer-->
         <footer class="footer text-center bg-dark">
             <div>
@@ -237,108 +286,107 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const nameElement = document.querySelector(".heading-name");
+            const introElement = document.querySelector(".heading-intro");
+            const socialIcons = document.querySelectorAll(".social-icons a");
+            const mastheadButton = document.querySelector(".masthead-button a");
 
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                <div class="modal-body text-left pb-5 bg-dark text-light">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <div class="d-flex flex-column flex-md-row justify-content-between mb-5 resume-div">
-                                    <div class="flex-grow-1">
-                                        <h3 class="mb-0">iOS Developer</h3>
-                                        <div class="subheading mb-3">Brigham Young University - Office of Digital Humanities
-                                        </div>
-                                        <div class= "subheading mb-3">January 2023 - Present</div>
-                                        <div class = "resume-bullet-points">
-                                            <p>▪ Developer on BYU’s WordCruncher application, tasked with designing and implementing an iOS version.</p>
-                                            <p>▪ WordCruncher is an E-Text app, similar to the Kindle application that combines a variety of search and analysis
-                                                reports to provide better text and linguistics analysis.</p>
-                                            <p>▪ Collaborate with a 3-person development team to create the iOS user interface.</p>
-                                            <p>▪ Learning Swift and beginning development on application within 1 month of starting.</p>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                <button class="btn btn-primary more-info-btn" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                                    See Recent Updates
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+            // Create GSAP timeline for a smooth sequence
+            const tl = gsap.timeline();
 
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                <div class="modal-body text-left pb-5 bg-dark text-light">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <div class="d-flex flex-column flex-md-row justify-content-between mb-5 resume-div">
-                                    <div class="flex-grow-1">
-                                        <h3 class="mb-0">Student Researcher in AI and Large Language Models</h3>
-                                        <div class="subheading mb-3">Brigham Young University -  Professor Nancy Fulda</div>
-                                        <div class= "subheading mb-3">August 2023 - Present</div>
-                                        <div class = "resume-bullet-points">
-                                            <p>▪ Design, train, and evaluate parallelized (multi-GPU) Large-Scale Language Models (LLM) under the direction of
-                                                Professor Nancy Fulda</p>
-                                            <p>▪ Utilize the Language Lens Compute Cluster (Supercomputer) at Brigham Young University to implement the LLM.</p>
-                                            <p>▪ Implement AI assisted email client that analyzes incoming emails and breaks down legal clauses in
-                                                    attachments for easy analysis. Used by the BYU Research Administration Office.</p>
-                                            <p>▪ Conduct research into emerging technologies such as RetNets and other transformer alternatives.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class = "align-items-center">
-                                    <button class="btn btn-primary more-info-btn" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                                        See Recent Updates
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+            // Animate the name element
+            tl.from(nameElement, {
+                opacity: 0,
+                y: 20,
+                duration: 1,
+                ease: "power2.out",
+            });
 
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                <div class="modal-body text-left pb-5 bg-dark text-light">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <div class="d-flex flex-column flex-md-row justify-content-between mb-5 resume-div">
-                                    <div class="flex-grow-1">
-                                        <h3 class="mb-0">Teaching Assistant - Algorithm Design and Analysis</h3>
-                                        <div class="subheading mb-3">Brigham Young University -  Professor Tony Martinez</div>
-                                        <div class= "subheading mb-3">January 2024 - Present</div>
-                                        <div class = "resume-bullet-points">
-                                            <p>▪ Teach and assist 125 students understanding of common algorithms in Computer Science</p>
-                                            <p>▪ Review code and assist students with testing and designing algorithms.</p>
-                                            <p>▪ Communicate clearly and effectively with Professors, TAs, and students to ensure optimal experience in the class.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+            // Animate the introduction text
+            tl.from(introElement, {
+                opacity: 0,
+                y: 20,
+                duration: 1,
+                ease: "power2.out",
+            }, "-=0.5");
+            // Animate the social icons
+            tl.from(socialIcons, {
+                opacity: 0,
+                y: 10,
+                duration: 0.3,
+                stagger: 0.2,
+                ease: "back.out(1.7)",
+            });
+
+            // Animate the button
+            tl.from(mastheadButton, {
+                opacity: 0,
+                scale: 0.3,
+                duration: 0.8,
+                ease: "back.out(1.7)",
+            });
+            const experienceSection = document.querySelector(".experience-section");
+            gsap.from(experienceSection, {
+                opacity: 0,
+                y: 15,
+                duration: 2,
+                stagger: 0.3,
+                scrollTrigger: {
+                    trigger: experienceSection,
+                    start: "top 80%",
+                    toggleActions: "play none none reverse",
+                    },
+            });
+        
+            const educationSection = document.querySelector(".education-section");
+            // Set up the GSAP animation
+            gsap.from(educationSection, {
+                opacity: .5,
+                y: 15, // Slide up effect
+                duration: 2,
+                ease: "power2.out",
+                scrollTrigger: {
+                trigger: educationSection,
+                start: "top 80%", // When the top of the section hits 75% of the viewport height
+                toggleActions: "play none none reverse", // Play animation when in view, reverse when out of view
+                },
+            });
+            const connectSection = document.querySelector(".connect-section");
+            // Set up the GSAP animation
+            gsap.from(connectSection, {
+                opacity: 0,
+                y: 15, // Slide up effect
+                duration: 2,
+                ease: "power2.out",
+                scrollTrigger: {
+                trigger: connectSection,
+                start: "top 80%", // When the top of the section hits 75% of the viewport height
+                toggleActions: "play none none reverse", // Play animation when in view, reverse when out of view
+                },
+            });
+            const skillSections = gsap.utils.toArray(".skill-section");
+
+            // Animate each skill section with a staggered effect
+            gsap.from(skillSections, {
+                opacity: 0,
+                y: 50,
+                duration: 2,
+                ease: "power2.out",
+                stagger: 0.3, // Stagger delay between animations
+                scrollTrigger: {
+                trigger: ".skills-section",
+                start: "top 75%",
+                toggleActions: "play none none reverse",
+                },
+            });
+    });
+        
+    </script>
+
 
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
         <div class="modal-dialog modal-xl">
@@ -351,20 +399,31 @@
                                 <!-- Portfolio Modal - Title-->
                                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5 resume-div">
                                     <div class="flex-grow-1">
-                                        <h3 class="mb-0">Retention Network Research</h3>
-                                        <div class="subheading mb-3"><a href="https://dragn.ai/"> Link to DRAGN LABS Website</a></div>
+                                        <h3 class="mb-0 text-light">Natural Language Processing and Large Language Model Research</h3>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="subheading mb-3">Experiences as a Undergraduate Researcher in AI/ML & NLP</div>
+                                            <a href="https://dragn.ai/" class="btn btn-primary ms-md-3">More Info on DRAGN Labs</a>
+                                        </div>
+                            
                                         <div class = "resume-bullet-points">
-                                            <h4 >Recent Updates: 1/19/2024</h4>
-                                            <p>▪ Data: We used a subset of WikText-2 to do our data run, specifically the smallest subset called wikitext-2-v1.  This will allow us to hopefully get a good baseline without spending too much time on training each model.</p>
+                                            <div class="col-md-8">
+                                                <h4>Experiences</h4>
+                                                <ul>
+                                                    <li>I have worked in the Deep Representations and Architectures for Generative systems and Natural language understanding (DRAGN) Lab for the last 18 months, researching attention-based language model architectures. </li>
+                                                    <li>I played a critical role in developing a model pipeline to pretrain one - three billion parameter models in parallel across multiple GPUs.  This pipeline is a major advancement for the language modeling labs at BYU, enabling my team and other labs to study new LLM research areas beyond simply fine-tuning and prompt engineering effects.  </li>
+                                                    <li>The model training is currently complete, and this work is scheduled for submission as a full-length research paper at ACL 2025.  </li>
+                                                    <li>In addition, I created a comprehensive benchmarking suite for comparing the performance and capabilities of three different attention mechanisms.  </li>
+                                                    <li>The goal for this research is to distinguish the properties endowed by each attention mechanism and establish a methodology allowing for future practitioners to choose the most suitable architecture for their individual use case. </li>
+                                                    
+                                                </ul>
+                                            </div>
+                                           
+                                            <!-- <p>▪ Data: We used a subset of WikText-2 to do our data run, specifically the smallest subset called wikitext-2-v1.  This will allow us to hopefully get a good baseline without spending too much time on training each model.</p>
                                             <p>▪ Models: We are training a total of 54 models, 27 RetNet models and 27 Transformer models.  We preforming a grid search, comparing 3 hyper-parameters, testing 3 different values for each hyper-parameter.  The parameters we are testing are batch size, embed dimension, learning rate, while tracking time to train and the average loss for each model.  We will be running a comparison on these models to see the differences, which is the role of the benchmarks group.  This data run will not include the testing of benchmarks, we will do that after we have received the 54 models back.   Benchmarks is ready however, and as soon as the run is over they will begin their testing.  We hope to have the functionality to run benchmarks as soon as the models are done training integrated into main soon. </p>
                                             <p>▪Outcome: The hoped for outcome is that we will have models that we can analyze to find large differences between transformer and retnet models, which conducting a fair and equal comparison.  This will let us know what else we need to do to train from scratch and help us determine if our project has potential moving forward.</p>
-                                            <p>A very small scale model of our Retention Based Network is below</p>
-                                        </div>
-                                        <div>
-                                            <img class = "img-fluid" src = "assets/img/RetNet_Summary.png">
+                                            <p>A very small scale model of our Retention Based Network is below</p> -->
                                         </div>
                                     </div>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -380,25 +439,38 @@
                 <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
                 <div class="modal-body text-left pb-5 bg-dark text-light">
                     <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <div class="d-flex flex-column flex-md-row justify-content-between mb-5 resume-div">
-                                    <div class="flex-grow-1">
-                                        <h3 class="mb-0">WordCruncher</h3>
-                                        <div class="subheading mb-3"><a href="https://wordcruncher.com/"> Link to WordCruncher Website</a></div>
-                                        <div class =>
-                                            <p>▪ Inital bookstore is completed! Products are able to be bought and downloaded in as many as 50 languages!</p>
-                                            <p>▪ Search Functionality has been completed!  Products are able to be searched by various keywords in the large library provided by WordCruncher.</p>
-                                            <p>▪ Account Functionality has been completed! Users are now able to save setting and securely sign in with their WordCruncher Login.</p>
+                        <div class="d-flex flex-column flex-md-row justify-content-between resume-div">
+                            <div class="flex-grow-1 ">
+                                <h3 class="mb-0 text-light">WordCruncher</h3>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="subheading mb-3">iOS Developer on WordCruncher Application</div>
+                                    <a href="https://wordcruncher.com/" class="btn btn-primary ms-md-3">More Info on WordCruncher</a>
+                                </div>
+                                <div class = "resume-bullet-points">
+                                    <div class="row">
+                                        <!-- Experience List on the left -->
+                                        <div class="col-md-4">
+                                            <ul>
+                                                <li>Created a online bookstore where products are able to be bought and downloaded in as many as 50 languages.</li>
+                                                <li>Created a search application where products are able to be searched by various keywords in the large library provided by WordCruncher.</li>
+                                                <li>Created a Secure Sign on where users are able to save settings and securely sign in with their WordCruncher Login</li>
+                                                <li>Learn Swift and SwiftUI in order to create the frontend and backend</li>
+                                            </ul>
                                         </div>
-                                    </div>
+                                        <!-- Images and Captions on the right -->
+                                        <div class="col-md-4">
+                                            <div class="image-caption">
+                                                <img class="img-fluid wcr-pics" src="assets/img/Bookstore_WCR.png" alt="..." >
+                                                <p>WordCruncher Bookstore that I designed and developed </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="image-caption">
+                                                <img class="img-fluid wcr-pics" src="assets/img/Bible_WCR.png" alt="..." >
+                                                <p>Search Application that I designed and developed </p>
+                                            </div>
+                                        </div>
 
-                                    <div class = col-md-4>
-                                        <img class="img-fluid wcr-pics" src="assets/img/Bookstore_WCR.png" alt="..." >
-                                    </div>
-                                    <div class = col-md-4>
-                                        <img class="img-fluid wcr-pics" src="assets/img/Bible_WCR.png" alt="..." >
                                     </div>
                                 </div>
                             </div>
@@ -418,22 +490,37 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
-                                <div class="d-flex flex-column flex-md-row justify-content-between mb-5 resume-div">
+                                <div class="d-flex flex-column flex-md-row justify-content-between resume-div">
                                     <div class="flex-grow-1 ">
-                                        <h3 class="mb-0">Ike Houston & The Zeros</h3>
-                                        <div class="subheading mb-3"><a href="https://www.youtube.com/watch?v=mrebrXIAtAo"> Link to our Highlight Reel</a></div>
-                                        <div class = "resume-bullet-points">
-                                            <h4>About me!</h4>
-                                            <p>▪ I have been playing music since I was 5 years old and play guitar in a local band in Provo, UT.</p>
-                                            <p>Discography: Ike Houston and the Zeros came to be by sheer chance. A group of friends of friends brought together by the thing they cherish most. Good music. The band consists of solo act Ike Houston, as lead singer and primary songwriter, who has been writing and recording his own music for a couple years. Seth Alley and John Tappen, two guitarists that let their sheer talent speak for itself. Andrew Alley, a killer bassist who with a heart of gold who never leaves the pocket. Noah Dansie, a classically trained snare drummer with enough style and flair to blow anyone out of the water. And Young Enoch, an all around musician and engineer who is infinitely inspired beyond his years. Together, their sound hails inspiration from late 00’s rock mixed with just the right amount of pop to make them a true force to be reckoned with. They have built up quite the reputation around Provo and abroad for their lively shows that are full on productions, they have more than a decade of performance experience combined and can bring a crowd to any venue. </p>
-                                            <h4 style="padding-top: 30px;"> Next Performance: Febuary 15th: The Boardwalk, Orem UT</h4>
-                                            <!-- <p>▪ Models: We are training a total of 54 models, 27 RetNet models and 27 Transformer models.  We preforming a grid search, comparing 3 hyper-parameters, testing 3 different values for each hyper-parameter.  The parameters we are testing are batch size, embed dimension, learning rate, while tracking time to train and the average loss for each model.  We will be running a comparison on these models to see the differences, which is the role of the benchmarks group.  This data run will not include the testing of benchmarks, we will do that after we have received the 54 models back.   Benchmarks is ready however, and as soon as the run is over they will begin their testing.  We hope to have the functionality to run benchmarks as soon as the models are done training integrated into main soon. </p>
-                                            <p>▪Outcome: The hoped for outcome is that we will have models that we can analyze to find large differences between transformer and retnet models, which conducting a fair and equal comparison.  This will let us know what else we need to do to train from scratch and help us determine if our project has potential moving forward.
-                                            </p>
-                                            <p>▪ </p> -->
+                                        <h3 class="mb-0 text-light">Homebase Personal Project</h3>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="subheading mb-3">Full-Stack Trip Planning and Optimization Web App</div>
+                                            <a href="https://github.com/adamrounsville/homebase" class="btn btn-primary ms-md-3">See Project Github</a>
                                         </div>
-                                        <div>
-                                            <img class = "img-fluid" src = "assets/img/IMG_7949 2.JPG">
+                                        <div class = "resume-bullet-points">
+                                            <h4>Experiences</h4>
+                                            <div class="row">
+                                                <!-- Experience List on the left -->
+                                                <div class="col-md-8">
+                                                    <ul>
+                                                        <li>Homebase is your ultimate trip planning companion, designed to take the stress out of organizing vacations. By seamlessly integrating with Google Maps, Homebase allows you to group your favorite places, events, and activities into a comprehensive plan tailored to your family's interests. With Homebase, you'll get optimized routes that ensure you can do everything you want, saving time and maximizing your experience.
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                                <h4>Technologies Used </h4>
+                                                <div class="col-md-8">
+                                                    <ul>
+                                                        <li>Frontend: HTML, CSS, Typescript, React, Tailwind</li>
+                                                        <li>Backend: FastAPI, Google Maps API, Python</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="image-caption">
+                                                    <img class="img-fluid mb-3" src="assets/img/HomebaseExample.jpg" alt="image1">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -454,21 +541,41 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
-                                <div class="d-flex flex-column flex-md-row justify-content-between mb-5 resume-div">
+                                <div class="d-flex flex-column flex-md-row justify-content-between resume-div">
                                     <div class="flex-grow-1 ">
-                                        <h3 class="mb-0">WebDevConnect</h3>
-                                        <div class="subheading mb-3"><a href="https://webdevconnect.us-east-1.elasticbeanstalk.com/"> Link to WebDevConnect</a></div>
-                                        <div class = "resume-bullet-points">
-                                            <h4>Value Proposition</h4>
-                                            <p>▪ For owners of young startups who need webpages and ways for their customers to interact with their product, WebDevConnect is an online resource that connects students and beginning developers with startups, allowing them to build web applications for companies for university credit.  Unlike other job board websites such as Indeed or Handshake, this allows for small companies to find reliable help for a fraction of the cost of a senior developer. </p>
-                                            <h4 style="padding-top: 30px;"> Pitches coming Febuary 2024 - Check out our website above!</h4>
-                                            <!-- <p>▪ Models: We are training a total of 54 models, 27 RetNet models and 27 Transformer models.  We preforming a grid search, comparing 3 hyper-parameters, testing 3 different values for each hyper-parameter.  The parameters we are testing are batch size, embed dimension, learning rate, while tracking time to train and the average loss for each model.  We will be running a comparison on these models to see the differences, which is the role of the benchmarks group.  This data run will not include the testing of benchmarks, we will do that after we have received the 54 models back.   Benchmarks is ready however, and as soon as the run is over they will begin their testing.  We hope to have the functionality to run benchmarks as soon as the models are done training integrated into main soon. </p>
-                                            <p>▪Outcome: The hoped for outcome is that we will have models that we can analyze to find large differences between transformer and retnet models, which conducting a fair and equal comparison.  This will let us know what else we need to do to train from scratch and help us determine if our project has potential moving forward.
-                                            </p>
-                                            <p>▪ </p> -->
+                                        <h3 class="mb-0 text-light">Software Engineering Intern at Butlr</h3>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="subheading mb-3">Experiences as a Full-Stack & ML SWE Intern</div>
+                                            <a href="https://www.butlr.com/" class="btn btn-primary ms-md-3">More Info on Butlr</a>
                                         </div>
-                                        <div>
-                                            <img class = "img-fluid" src = "assets/img/WebDevConnect-landing.png">
+                                        <div class = "resume-bullet-points">
+                                            <h4>Experiences</h4>
+                                            <div class="row">
+                                                <!-- Experience List on the left -->
+                                                <div class="col-md-8">
+                                                    <ul>
+                                                        <li>Through my internship at Butlr, I expanded my research experience in machine learning and language modeling to include computer vision.</li>
+                                                        <li>I was tasked with the implementation of computer vision ML models to detect sensor frames containing a person, which would be candidates for further processing on those frames.</li>
+                                                        <li> I created custom Convolutional Neural Networks to perform the binary classification and achieved 98% accuracy when tested on dozens of sensors across multiple continents.  This laid the groundwork for ML frame classification at Butlr and has the potential to reduce production costs by up to 50%.  </li>
+                                                        <li>I also developed a full-stack visualization application for sensor installation and sensitivity troubleshooting.  My application became widely used by engineers and sensor deployment staff and I have since been invited back to continue the development of the tool.</li>
+                                                    </ul>
+                                                    <div class="image-caption" style="padding-top: 30px;">
+                                                        <img class="img-fluid mb-3" src="assets/img/model_statistics.png" alt="image3">
+                                                        <p>Model Performance Table: Used to compare Convolutional Neural Network performance statistics</p>
+                                                    </div>
+                                                </div>
+                                                <!-- Images and Captions on the right -->
+                                                <div class="col-md-4">
+                                                    <div class="image-caption">
+                                                        <img class="img-fluid mb-3" src="assets/img/grayscale_heatmap.png" alt="image1">
+                                                        <p>Heatmap: Raw unedited heatmap image </p>
+                                                    </div>
+                                                    <div class="image-caption">
+                                                        <img class="img-fluid mb-3" src="assets/img/processed_heatmap_image.png" alt="image2">
+                                                        <p>Heatmap 2: Heatmap image after Preprocessing, Smoothing, Thresholding, and displayed by the Visualizer I developed</p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
