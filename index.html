@@ -329,18 +329,19 @@
                 duration: 0.8,
                 ease: "back.out(1.7)",
             });
-            // const experienceSection = document.querySelector(".experience-section");
-            // gsap.from(experienceSection, {
-            //     opacity: 0,
-            //     y: 15,
-            //     duration: 2,
-            //     stagger: 0.3,
-            //     scrollTrigger: {
-            //         trigger: experienceSection,
-            //         start: "top 80%",
-            //         toggleActions: "play none none reverse",
-            //         },
-            // });
+            
+            const experienceSection = document.querySelector(".experience-section");
+            gsap.from(experienceSection, {
+                opacity: 0,
+                y: 15,
+                duration: 2,
+                stagger: 0.3,
+                scrollTrigger: {
+                    trigger: experienceSection,
+                    start: "top 80%",
+                    toggleActions: "play none none reverse",
+                    },
+            });
         
             // const educationSection = document.querySelector(".education-section");
             // // Set up the GSAP animation
