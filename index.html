@@ -329,7 +329,7 @@
                 duration: 0.8,
                 ease: "back.out(1.7)",
             });
-            
+
             const experienceSection = document.querySelector(".experience-section");
             gsap.from(experienceSection, {
                 opacity: 0,
@@ -343,47 +343,47 @@
                     },
             });
         
-            // const educationSection = document.querySelector(".education-section");
-            // // Set up the GSAP animation
-            // gsap.from(educationSection, {
-            //     opacity: .5,
-            //     y: 15, // Slide up effect
-            //     duration: 2,
-            //     ease: "power2.out",
-            //     scrollTrigger: {
-            //     trigger: educationSection,
-            //     start: "top 80%", // When the top of the section hits 75% of the viewport height
-            //     toggleActions: "play none none reverse", // Play animation when in view, reverse when out of view
-            //     },
-            // });
-            // const connectSection = document.querySelector(".connect-section");
-            // // Set up the GSAP animation
-            // gsap.from(connectSection, {
-            //     opacity: 0,
-            //     y: 15, // Slide up effect
-            //     duration: 2,
-            //     ease: "power2.out",
-            //     scrollTrigger: {
-            //     trigger: connectSection,
-            //     start: "top 80%", // When the top of the section hits 75% of the viewport height
-            //     toggleActions: "play none none reverse", // Play animation when in view, reverse when out of view
-            //     },
-            // });
-            // const skillSections = gsap.utils.toArray(".skill-section");
+            const educationSection = document.querySelector(".education-section");
+            // Set up the GSAP animation
+            gsap.from(educationSection, {
+                opacity: .5,
+                y: 15, // Slide up effect
+                duration: 2,
+                ease: "power2.out",
+                scrollTrigger: {
+                trigger: educationSection,
+                start: "top 80%", // When the top of the section hits 75% of the viewport height
+                toggleActions: "play none none reverse", // Play animation when in view, reverse when out of view
+                },
+            });
+            const connectSection = document.querySelector(".connect-section");
+            // Set up the GSAP animation
+            gsap.from(connectSection, {
+                opacity: 0,
+                y: 15, // Slide up effect
+                duration: 2,
+                ease: "power2.out",
+                scrollTrigger: {
+                trigger: connectSection,
+                start: "top 80%", // When the top of the section hits 75% of the viewport height
+                toggleActions: "play none none reverse", // Play animation when in view, reverse when out of view
+                },
+            });
+            const skillSections = gsap.utils.toArray(".skill-section");
 
-            // // Animate each skill section with a staggered effect
-            // gsap.from(skillSections, {
-            //     opacity: 0,
-            //     y: 50,
-            //     duration: 2,
-            //     ease: "power2.out",
-            //     stagger: 0.3, // Stagger delay between animations
-            //     scrollTrigger: {
-            //     trigger: ".skills-section",
-            //     start: "top 75%",
-            //     toggleActions: "play none none reverse",
-            //     },
-            // });
+            // Animate each skill section with a staggered effect
+            gsap.from(skillSections, {
+                opacity: 0,
+                y: 50,
+                duration: 2,
+                ease: "power2.out",
+                stagger: 0.3, // Stagger delay between animations
+                scrollTrigger: {
+                trigger: ".skills-section",
+                start: "top 75%",
+                toggleActions: "play none none reverse",
+                },
+            });
     });
         
     </script>
