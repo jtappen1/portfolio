@@ -1,625 +1,626 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Strata by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>John Tappen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f5f4f0;
+      --ink: #1a1a18;
+      --muted: #888880;
+      --accent: #3a5a3a;
+      --rule: #d8d7d2;
+      --card: #eeecea;
+    }
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/headshot.jpg" alt="" /></a>
-					<h1><strong>John Tappen </strong><br />
-					UPenn CIS MSE || Incoming Nuro SWE <br />
-					xLAB || GRASP Lab</h1>
-				</div>
-			</header>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-		<!-- Main -->
-			<div id="main">
+    html { font-size: 16px; scroll-behavior: smooth; }
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>Hi I'm John! </h2>
-						</header>
-						<p>I'm currently pursuing my Master's in Computer Science (CIS MSE) at the University of Pennsylvania, specializing in Computer Vision & Machine Learning.  I will be joining <a href="https://nuro.ai" target="_blank">Nuro</a> as a SWE Intern on the Compute Platform team Summer 2026. I am also conducting research on off-road autonomous driving and racing with <a href="https://xlab.upenn.edu/" target="_blank">xLAB</a>, a research group within the <a href="https://www.grasp.upenn.edu/" target="_blank">GRASP</a> Lab at UPenn and advised by Professor Rahul Mangharam.</p>
-						<p>Previously, I was a Software Engineer II at <a href="https://www.butlr.com/" target="_blank">Butlr</a>, where I developed and optimized real-time spatial intelligence systems using machine learning, computer vision, and distributed algorithms. My work spanned large-scale AWS deployments, Ray.io distributed systems, and ML-driven sensor analytics, improving both accuracy and scalability in production environments.</p>
-						<p>I also earned my B.S. in Computer Science from BYU, where I contributed to AI and LLM research in BYU’s <a href="https://dragn.ai/" target="_blank">DRAGN</a> Lab, focusing on attention mechanisms and large-scale training pipelines.</p>
-						<ul class="actions">
-							<li><a href="#two" class="button">Learn More</a></li>
-						</ul>
-					</section>
-					
-				<section id="education">
-					<h2>Education</h2>
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 80px 32px 120px;
+    }
 
-					<style>
-						/* ── Education Section ── */
-						#education .edu-grid {
-						display: grid;
-						grid-template-columns: 1fr 1fr;
-						gap: 2em;
-						margin-bottom: 1.5em;
-						}
-						@media screen and (max-width: 736px) {
-						#education .edu-grid { grid-template-columns: 1fr; }
-						}
+    /* ── Typography ── */
+    h1 {
+      font-family: 'DM Mono', monospace;
+      font-weight: 400;
+      font-size: clamp(1.6rem, 5vw, 2.2rem);
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin-bottom: 0.25em;
+    }
 
-						.edu-card {
-						border-left: 3px solid #49bf9d; /* matches Strata's accent green */
-						padding: 0 0 0 1.25em;
-						}
-						.edu-card .school {
-						font-size: 1.05em;
-						font-weight: 700;
-						margin: 0 0 0.1em 0;
-						color: #3d4449;
-						}
-						.edu-card .degree {
-						font-size: 0.9em;
-						color: #7f888f;
-						margin: 0 0 0.15em 0;
-						}
-						.edu-card .dates {
-						font-size: 0.8em;
-						color: #aaa;
-						letter-spacing: 0.05em;
-						text-transform: uppercase;
-						margin: 0 0 0.85em 0;
-						}
+    h2 {
+      font-family: 'DM Mono', monospace;
+      font-weight: 300;
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1.5em;
+    }
 
-						/* pill tags */
-						.tag-list {
-						display: flex;
-						flex-wrap: wrap;
-						gap: 0.4em;
-						list-style: none;
-						padding: 0;
-						margin: 0 0 0.75em 0;
-						}
-						.tag-list li {
-						background: #f0f1f2;
-						color: #555;
-						font-size: 0.72em;
-						padding: 0.25em 0.7em;
-						border-radius: 2em;
-						letter-spacing: 0.03em;
-						}
+    h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 0.95rem;
+      margin-bottom: 0.15em;
+    }
 
-						/* honors row */
-						.honors {
-						display: flex;
-						align-items: flex-start;
-						gap: 0.5em;
-						font-size: 0.82em;
-						color: #7f888f;
-						}
-						.honors .icon {
-						color: #49bf9d;
-						flex-shrink: 0;
-						margin-top: 0.05em;
-						}
-					</style>
+    p { color: #3d3d39; font-size: 0.93rem; }
 
-					<div class="edu-grid">
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+      transition: opacity 0.15s;
+    }
+    a:hover { opacity: 0.6; }
 
-						<!-- UPenn -->
-						<div class="edu-card">
-						<p class="school">University of Pennsylvania</p>
-						<p class="degree">M.S.E. in Computer and Information Science</p>
-						<p class="dates">2025 – 2027</p>
+    /* ── Layout helpers ── */
+    hr {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 3em 0;
+    }
 
-						<p style="font-size:0.85em; margin:0 0 0.6em 0; color:#555;">
-							<strong>Focus:</strong> Computer Vision &amp; Machine Learning
-						</p>
+    .section { margin-bottom: 3.5em; }
 
-						<p style="font-size:0.85em; margin:0 0 0.6em 0; color:#555;">
-							<strong>GPA:</strong> 3.6
-						</p>
+    /* ── Header ── */
+    .header-block { margin-bottom: 3.5em; }
+    .header-block .subtitle {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-style: italic;
+      margin-top: 0.5em;
+    }
 
-						<p style="font-size:0.78em; color:#7f888f; margin:0 0 0.3em 0; text-transform:uppercase; letter-spacing:0.07em;">Relevant Coursework</p>
-						<ul class="tag-list">
-							<li>Computer Vision</li>
-							<li>Machine Learning</li>
-							<li>Robotics</li>
-							<li>Reinforcement Learning</li>
-							<li>Distributed Systems</li>
-						</ul>
+    .header-inner {
+      display: flex;
+      align-items: center;
+      gap: 1.6em;
+    }
 
-						<div class="honors">
-							<span class="icon solid fa-award"></span>
-							<span>Research Assistant — xLAB / GRASP Lab (off-road autonomous driving &amp; racing)</span>
-						</div>
-						<div class="honors">
-							<span class="icon solid fa-award"></span>
-							<span>Competitive Programming Club</span>
-						</div>
-						</div>
+    .avatar {
+      flex-shrink: 0;
+      width: 145px;
+      height: 145px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: var(--card);
+      border: 2px solid var(--rule);
+    }
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .avatar-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      color: #bbb;
+      letter-spacing: 0.04em;
+      text-align: center;
+      padding: 0.5em;
+      line-height: 1.5;
+    }
 
-						<!-- BYU -->
-						<div class="edu-card">
-						<p class="school">Brigham Young University</p>
-						<p class="degree">B.S. in Computer Science</p>
-						<p class="dates">2019 – 2024</p>
+    /* ── Tag pills ── */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35em;
+      margin-top: 0.6em;
+    }
+    .tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      padding: 0.2em 0.65em;
+      background: transparent;
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
 
-						<p style="font-size:0.85em; margin:0 0 0.6em 0; color:#555;">
-							<strong>Focus:</strong> AI &amp; Natural Language Processing
-						</p>
-						<p style="font-size:0.85em; margin:0 0 0.6em 0; color:#555;">
-							<strong>GPA:</strong> 3.9
-						</p>
+    /* ── Education grid ── */
+    .edu-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2em;
+    }
+    @media (max-width: 520px) {
+      .edu-row { grid-template-columns: 1fr; }
+    }
 
-						<p style="font-size:0.78em; color:#7f888f; margin:0 0 0.3em 0; text-transform:uppercase; letter-spacing:0.07em;">Relevant Coursework</p>
-						<ul class="tag-list">
-							<li>NLP</li>
-							<li>Machine Learning</li>
-							<li>Data Structures</li>
-							<li>Algorithms</li>
-							<li>Software Engineering</li>
-							<li>Linear Algebra</li>
-						</ul>
+    .edu-item {
+      padding-left: 1em;
+      border-left: 2px solid var(--accent);
+    }
+    .edu-item .school {
+      font-weight: 500;
+      font-size: 0.9rem;
+      margin-bottom: 0.05em;
+    }
+    .edu-item .degree {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .edu-item .dates {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      color: #aaa;
+      margin-bottom: 0.5em;
+    }
 
-						<div class="honors">
-							<span class="icon solid fa-award"></span>
-							<span>Research Assistant — DRAGN Lab (attention mechanisms &amp; large-scale LLM training)</span>
-						</div>
-						<div class="honors">
-							<span class="icon solid fa-award"></span>
-							<span>2022 - 2024 Deans List (Top 5% of class)</span>
-						</div>
-						</div>
+    /* ── Work experience ── */
+    .job { margin-bottom: 1.8em; }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1em;
+      flex-wrap: wrap;
+    }
+    .job-title {
+      font-weight: 500;
+      font-size: 0.92rem;
+    }
+    .job-date {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .job-company {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.35em;
+    }
+    .job p {
+      font-size: 0.85rem;
+      color: #555550;
+    }
 
-					</div>
-					</section>
+    /* ── Project cards ── */
+    .project-list {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--rule);
+    }
 
+    .project-card {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      border-bottom: 1px solid var(--rule);
+      transition: background 0.15s;
+      overflow: hidden;
+    }
+    .project-card:last-child { border-bottom: none; }
+    .project-card:hover { background: var(--card); }
 
-				<!-- Two -->
-					<section id="two">
-						<h2>Recent Work</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-							<a href="images/fulls/01.jpg" class="image fit thumb">
-								<video autoplay loop muted playsinline style="width:100%; object-fit:cover;">
-								<source src="images/videos/roboracer-edited.mp4" type="video/mp4">
-								</video>
-							</a>
-							<h3>Ultricies lacinia interdum</h3>
-							<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-								<h3>Ultricies lacinia interdum</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-								<h3>Tortor metus commodo</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-								<h3>Quam neque phasellus</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>Nunc enim commodo aliquet</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>Risus ornare lacinia</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-						</div>
-						<ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
-						</ul>
-					</section>
+    .project-media {
+      position: relative;
+      background: #e0dedd;
+      overflow: hidden;
+      min-height: 140px;
+    }
+    .project-media video,
+    .project-media img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .project-media .no-media {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      color: #aaa9a4;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
 
-				<!-- Three -->
-					<section id="three">
-						<h2>Get In Touch</h2>
-						<p>I'm always interested on collaborating with smart people on interesting projects, especially in the ML/Robotics field.  Feel free to connect with me on LinkedIn if you are interested on working together.</p>
-						<ul class="actions">
-							<li><a href="https://www.linkedin.com/in/john-tappen/" class="button">LinkedIn</a></li>
-						</ul>
-						<!-- <div class="row">
-							<div class="col-8 col-12-small">
-								<form method="post" action="#">
-									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-									</div>
-								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</div>
-							<div class="col-4 col-12-small">
-								<ul class="labeled-icons">
-									<li>
-										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-										1234 Somewhere Rd.<br />
-										Nashville, TN 00000<br />
-										United States
-									</li>
-									<li>
-										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-										000-000-0000
-									</li>
-									<li>
-										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="#">hello@untitled.tld</a>
-									</li>
-								</ul>
-							</div>
-						</div> -->
-						<div id="page-views" style="display:inline-block; width:400px; transform:scale(0.8); transform-origin:top left;">
-						<script type="text/javascript" id="mapmyvisitors"
-							src="//mapmyvisitors.com/map.js?d=neOrJbyi3K1r80D1p_Diwbzhg9tHGC40UMkJXfakKUI&cl=ffffff&w=a">
-						</script>
+    .project-content {
+      padding: 1.15em 1.3em;
+    }
 
-						</div>
-					</section>
-					<section id="page-views" style="display:inline-block; width:400px; transform:scale(0.8); transform-origin:top left;">
-						<script type="text/javascript" id="mapmyvisitors"
-							src="//mapmyvisitors.com/map.js?d=neOrJbyi3K1r80D1p_Diwbzhg9tHGC40UMkJXfakKUI&cl=ffffff&w=a">
-						</script>
-					</section>
+    .project-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.75em;
+      flex-wrap: wrap;
+      margin-bottom: 0.3em;
+    }
 
-				<!-- Four -->
-				<!--
-					<section id="four">
-						<h2>Elements</h2>
+    .project-name {
+      font-weight: 500;
+      font-size: 0.92rem;
+      color: var(--ink);
+    }
 
-						<section>
-							<h4>Text</h4>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-							<hr />
-							<header>
-								<h4>Heading with a Subtitle</h4>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<header>
-								<h5>Heading with a Subtitle</h5>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<hr />
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<h5>Heading Level 5</h5>
-							<h6>Heading Level 6</h6>
-							<hr />
-							<h5>Blockquote</h5>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-							<h5>Preformatted</h5>
-							<pre><code>i = 0;
+    .project-link {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      border-bottom-color: transparent;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .project-link:hover { border-bottom-color: var(--accent); opacity: 1; }
 
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
+    .project-content p {
+      font-size: 0.83rem;
+      color: #666662;
+      margin-bottom: 0.55em;
+    }
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-						</section>
+    @media (max-width: 520px) {
+      .project-card { grid-template-columns: 1fr; }
+      .project-media { min-height: 160px; position: relative; aspect-ratio: 16/9; }
+    }
 
-						<section>
-							<h4>Lists</h4>
-							<div class="row">
-								<div class="col-6 col-12-xsmall">
-									<h5>Unordered</h5>
-									<ul>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-									<h5>Alternate</h5>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-xsmall">
-									<h5>Ordered</h5>
-									<ol>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ol>
-									<h5>Icons</h5>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-									</ul>
-								</div>
-							</div>
-							<h5>Actions</h5>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions small">
-								<li><a href="#" class="button primary small">Small</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary fit">Default</a></li>
-										<li><a href="#" class="button fit">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small fit">Small</a></li>
-										<li><a href="#" class="button small fit">Small</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
+    /* ── Expandable more projects ── */
+    #more-projects {
+      overflow: hidden;
+      max-height: 0;
+      border: 1px solid var(--rule);
+      border-top: none;
+      transition: max-height 0.4s ease;
+    }
+    #more-projects.open {
+      max-height: 1200px;
+    }
+    #more-projects .project-card:last-child {
+      border-bottom: none;
+    }
 
-						<section>
-							<h4>Table</h4>
-							<h5>Default</h5>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
+    /* ── See more button ── */
+    #see-more-btn {
+      display: block;
+      width: 100%;
+      margin-top: 1em;
+      background: none;
+      border: 1px solid var(--rule);
+      padding: 0.55em 1.2em;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+    }
+    #see-more-btn:hover {
+      background: var(--card);
+      color: var(--ink);
+    }
 
-							<h5>Alternate</h5>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
+    /* ── Footer links ── */
+    .links {
+      display: flex;
+      gap: 1.8em;
+      flex-wrap: wrap;
+    }
+    .links a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--ink);
+      border-bottom-color: var(--rule);
+    }
 
-						<section>
-							<h4>Buttons</h4>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Primary</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button large">Large</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<ul class="actions fit">
-								<li><a href="#" class="button primary fit">Fit</a></li>
-								<li><a href="#" class="button fit">Fit</a></li>
-							</ul>
-							<ul class="actions fit small">
-								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-								<li><a href="#" class="button fit small">Fit + Small</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-							</ul>
-							<ul class="actions">
-								<li><span class="button primary disabled">Primary</span></li>
-								<li><span class="button disabled">Default</span></li>
-							</ul>
-						</section>
+    /* ── Fade-in animation ── */
+    .fade {
+      opacity: 0;
+      transform: translateY(12px);
+      animation: fadeUp 0.55s ease forwards;
+    }
+    .fade:nth-child(1) { animation-delay: 0.05s; }
+    .fade:nth-child(2) { animation-delay: 0.15s; }
+    .fade:nth-child(3) { animation-delay: 0.25s; }
+    .fade:nth-child(4) { animation-delay: 0.35s; }
+    .fade:nth-child(5) { animation-delay: 0.45s; }
+    .fade:nth-child(6) { animation-delay: 0.55s; }
+    .fade:nth-child(7) { animation-delay: 0.65s; }
+    .fade:nth-child(8) { animation-delay: 0.75s; }
 
-						<section>
-							<h4>Form</h4>
-							<form method="post" action="#">
-								<div class="row gtr-uniform gtr-50">
-									<div class="col-6 col-12-xsmall">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-xsmall">
-										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<select name="demo-category" id="demo-category">
-											<option value="">- Category -</option>
-											<option value="1">Manufacturing</option>
-											<option value="1">Shipping</option>
-											<option value="1">Administration</option>
-											<option value="1">Human Resources</option>
-										</select>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-										<label for="demo-priority-low">Low Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-normal" name="demo-priority">
-										<label for="demo-priority-normal">Normal Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-high" name="demo-priority">
-										<label for="demo-priority-high">High Priority</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-copy" name="demo-copy">
-										<label for="demo-copy">Email me a copy of this message</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-human" name="demo-human" checked>
-										<label for="demo-human">I am a human and not a robot</label>
-									</div>
-									<div class="col-12">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
+    @keyframes fadeUp {
+      to { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
 
-						<section>
-							<h4>Image</h4>
-							<h5>Fit</h5>
-							<div class="box alt">
-								<div class="row gtr-50 gtr-uniform">
-									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<h5>Left &amp; Right</h5>
-							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						</section>
+  <!-- Header -->
+  <div class="header-block fade">
+    <div class="header-inner">
+      <div class="avatar">
+        <img src="images/headshot.jpg" alt="John Tappen"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="avatar-placeholder" style="display:none;">your<br>photo</div>
+      </div>
+      <div>
+        <h1>John Tappen</h1>
+        <p class="subtitle">M.S.E. Computer Science · UPenn &nbsp;·&nbsp; Incoming SWE @ Nuro</p>
+        <div class="links" style="margin-top:0.65em;">
+          <a href="https://www.linkedin.com/in/john-tappen/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/jtappen1" target="_blank">GitHub</a>
+          <a href="https://github.com/jtappen1/resume/blob/main/John-Tappen-Robotics-2026.pdf" target="_blank">Résumé</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-					</section>
-				-->
+  <!-- About -->
+  <div class="section fade">
+    <h2>About</h2>
+    <p>
+      I'm pursuing my Master's in Computer Science at the University of Pennsylvania, specializing in Computer Vision & Machine Learning. This summer I'll be joining <a href="https://nuro.ai" target="_blank">Nuro</a> as a SWE Intern on the Compute Platform team. I also conduct research on off-road autonomous driving and racing with <a href="https://xlab.upenn.edu/" target="_blank">xLAB</a> in the <a href="https://www.grasp.upenn.edu/" target="_blank">GRASP Lab</a>, advised by Professor <a href="https://xlab.upenn.edu/team/rahul/" target="_blank">Rahul Mangharam</a>.
+    </p>
+    <br>
+    <p>
+      I'm broadly interested in Physical Intelligence — the algorithms and systems that let robots interact with and understand the physical world. Previously, I was a SWE II at <a href="https://www.butlr.com/" target="_blank">Butlr</a>, building real-time spatial intelligence systems using ML, computer vision, and distributed algorithms.
+    </p>
+    <div class="tags">
+      <span class="tag">Computer Vision</span>
+      <span class="tag">Reinforcement Learning</span>
+      <span class="tag">Robotics</span>
+      <span class="tag">Machine Learning</span>
+      <span class="tag">Autonomous Driving</span>
+      <span class="tag">ML Optimization</span>
+      <span class="tag">SLAM</span>
+      <span class="tag">Large-scale Distributed Systems</span>
+    </div>
+  </div>
 
-			</div>
+  <hr>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://github.com/jtappen1/resume/blob/main/John-Tappen-Resume-2025.pdf"><span class="label">RESUME</span></a></li>
-						<li><a href="https://github.com/jtappen1" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li> <a href="https://leetcode.com/jtapp" class="icon solid fa-code" target="_blank"><span class="label">LeetCode</span></a></li>
-						<li><a href="https://www.linkedin.com/in/john-tappen/" class="icon brands fa-linkedin" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; jtappen</li>
-					</ul>
-				</div>
-			</footer>
+  <!-- Education -->
+  <div class="section fade">
+    <h2>Education</h2>
+    <div class="edu-row">
+      <div class="edu-item">
+        <p class="school">University of Pennsylvania</p>
+        <p class="degree">M.S.E. in Computer Science</p>
+        <p class="dates">2025 – 2027</p>
+        <p style="font-size:0.8rem; color:#555550;">Focus: CV & Machine Learning &nbsp;·&nbsp; GPA: 3.6</p>
+        <div class="tags" style="margin-top:0.5em;">
+          <span class="tag">Computer Vision</span>
+          <span class="tag">Robotics</span>
+          <span class="tag">RL</span>
+          <span class="tag">ML</span>
+        </div>
+      </div>
+      <div class="edu-item">
+        <p class="school">Brigham Young University</p>
+        <p class="degree">B.S. in Computer Science</p>
+        <p class="dates">2019 – 2024</p>
+        <p style="font-size:0.8rem; color:#555550;">Focus: AI & NLP &nbsp;·&nbsp; GPA: 3.9</p>
+        <div class="tags" style="margin-top:0.5em;">
+          <span class="tag">NLP</span>
+          <span class="tag">ML</span>
+          <span class="tag">Algorithms</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+  <hr>
 
-	</body>
+  <!-- Experience -->
+  <div class="section fade">
+    <h2>Experience</h2>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">SWE Intern · Compute Platform</span>
+        <span class="job-date">Summer 2026</span>
+      </div>
+      <p class="job-company"><a href="https://nuro.ai" target="_blank">Nuro</a></p>
+      <p>ML Infra & Distributed Systems for Autonomous Vehicles</p>
+
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Research Assistant</span>
+        <span class="job-date">2025 – present</span>
+      </div>
+      <p class="job-company"><a href="https://xlab.upenn.edu/" target="_blank">xLAB / GRASP Lab, UPenn</a></p>
+      <p>Off-road autonomous driving & racing research, advised by Professor Rahul Mangharam.</p>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Software Engineer II</span>
+        <span class="job-date">2023 – 2025</span>
+      </div>
+      <p class="job-company"><a href="https://www.butlr.com/" target="_blank">Butlr</a></p>
+      <p>Developed and optimized real-time spatial intelligence systems using ML, computer vision, and distributed algorithms across large-scale AWS deployments.</p>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Research Assistant</span>
+        <span class="job-date">2022 – 2024</span>
+      </div>
+      <p class="job-company"><a href="https://dragn.ai/" target="_blank">DRAGN Lab, BYU</a></p>
+      <p>AI & LLM research focusing on attention mechanisms and large-scale training pipelines.</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Projects -->
+  <div class="section fade">
+    <h2>Projects</h2>
+
+    <!-- Primary projects (always visible) -->
+    <div class="project-list">
+
+      <div class="project-card">
+        <div class="project-media">
+          <video autoplay loop muted playsinline>
+            <source src="images/videos/offroad-demo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="project-content">
+          <div class="project-card-header">
+            <span class="project-name">SLAM for Autonomous Off-road Racing</span>
+            <a href="https://github.com/jtappen1/zed-slam" class="project-link" target="_blank">GitHub ↗</a>
+          </div>
+          <p>Developed a VSLAM package for integration with the F1Tenth Roboracer platform. Provided a novel mapping and localization solution for Roboracer Autonomous Racing. Package added to Roboracer official integrations.</p>
+          <div class="tags">
+            <span class="tag">ROS2</span>
+            <span class="tag">Computer Vision</span>
+            <span class="tag">SLAM</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-media">
+          <video autoplay loop muted playsinline>
+            <source src="images/videos/drone-race-close.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="project-content">
+          <div class="project-card-header">
+            <span class="project-name">Autonomous Reinforcement Learning Drone Racing</span>
+            <a href="https://github.com/jtappen1/drone-racing-rl" class="project-link" target="_blank">GitHub ↗</a>
+          </div>
+          <p>Autonomous drone racing with PPO, implementing reward shaping, domain randomization, and reducing sim-to-real gap. Trained in simulation, later deployed.</p>
+          <div class="tags">
+            <span class="tag">PyTorch</span>
+            <span class="tag">Isaac Sim</span>
+            <span class="tag">Reinforcement Learning</span>
+            <span class="tag">Sim-to-Real</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-media">
+           <img src="images/care.jpeg" alt="Butlr Care"/>
+        </div>
+        <div class="project-content">
+          <div class="project-card-header">
+            <span class="project-name">Butlr Care</span>
+            <a href="https://www.butlr.com/solutions/care" class="project-link">Website ↗</a>
+          </div>
+          <p>Helped develop an anonymous trajectory tracking system and simulator using Kalman filters for senior living facilities.  Later worked on a CV based detection algo to capture boundary crossings.</p>
+          <div class="tags">
+            <span class="tag">Kalman Filters</span>
+            <span class="tag">Python</span>
+            <span class="tag">Signal Processing</span>
+            <span class="tag">Ray.io</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Hidden extra projects — add yours here -->
+    <div id="more-projects">
+
+      <div class="project-card">
+        <div class="project-media">
+          <video autoplay loop muted playsinline>
+            <source src="images/videos/f1tenth-detection.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="project-content">
+          <div class="project-card-header">
+            <span class="project-name">Autonomous Vision-based Overtaking through State Estimation</span>
+            <a href="https://github.com/jtappen1/autonomous-vehicle-overtaking" class="project-link" target="_blank">GitHub ↗</a>
+          </div>
+          <p>Autonomous driving pipeline focused on perception-based detection, tracking, and overtaking. Uses UKF, MPC, Frenet Planner, 2D LiDAR, YOLOv26.</p>
+          <div class="tags">
+            <span class="tag">Kalman Filters</span>
+            <span class="tag">TensorRT</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">MPC</span>
+            <span class="tag">Sensor Fusion</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="project-card">
+        <div class="project-media">
+          <div class="no-media">image</div>
+        </div>
+        <div class="project-content">
+          <div class="project-card-header">
+            <span class="project-name">Extra Project Two</span>
+            <a href="#" class="project-link">GitHub ↗</a>
+          </div>
+          <p>Description of this project — what it does, the problem it solves, and any notable results.</p>
+          <div class="tags">
+            <span class="tag">Tag</span>
+            <span class="tag">Tag</span>
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+
+    <button id="see-more-btn" onclick="toggleMore()">See more ↓</button>
+
+  </div>
+
+  <hr>
+
+  <!-- Contact -->
+  <div class="section fade">
+    <h2>Contact</h2>
+    <p>Feel free to reach out at jtappen (at) seas (dot) upenn (dot) edu or LinkedIn — I'm always open to collaborating on interesting problems in ML and robotics.</p>
+
+    </section>
+        <section id="page-views" style="display:inline-block; width:400px; transform:scale(0.8); transform-origin:top left;">
+          <script type="text/javascript" id="mapmyvisitors"
+            src="//mapmyvisitors.com/map.js?d=neOrJbyi3K1r80D1p_Diwbzhg9tHGC40UMkJXfakKUI&cl=ffffff&w=a">
+          </script>
+			</section>
+  </div>
+
+  <script>
+    function toggleMore() {
+      const panel = document.getElementById('more-projects');
+      const btn = document.getElementById('see-more-btn');
+      const isOpen = panel.classList.contains('open');
+      panel.classList.toggle('open');
+      btn.textContent = isOpen ? 'See more ↓' : 'See less ↑';
+    }
+  </script>
+
+</body>
 </html>
