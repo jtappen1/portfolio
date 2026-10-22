@@ -26,9 +26,9 @@
       font-family: 'DM Sans', sans-serif;
       font-weight: 300;
       line-height: 1.7;
-      max-width: 680px;
+      max-width: 960px;
       margin: 0 auto;
-      padding: 80px 32px 120px;
+      padding: 72px 40px 120px;
     }
 
     /* ── Typography ── */
@@ -141,6 +141,11 @@
       letter-spacing: 0.04em;
     }
 
+    .tag-status {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
     /* ── Education grid ── */
     .edu-row {
       display: grid;
@@ -209,19 +214,20 @@
 
     .project-card {
       display: grid;
-      grid-template-columns: 200px 1fr;
+      grid-template-columns: 300px 1fr;
       border-bottom: 1px solid var(--rule);
       transition: background 0.15s;
       overflow: hidden;
     }
     .project-card:last-child { border-bottom: none; }
     .project-card:hover { background: var(--card); }
+    .project-card.clickable { cursor: pointer; }
 
     .project-media {
       position: relative;
       background: #e0dedd;
       overflow: hidden;
-      min-height: 140px;
+      min-height: 170px;
     }
     .project-media video,
     .project-media img {
@@ -295,7 +301,7 @@
       transition: max-height 0.4s ease;
     }
     #more-projects.open {
-      max-height: 1200px;
+      max-height: 2400px;
     }
     #more-projects .project-card:last-child {
       border-bottom: none;
@@ -369,7 +375,7 @@
       </div>
       <div>
         <h1>John Tappen</h1>
-        <p class="subtitle">M.S.E. Computer Science · UPenn &nbsp;·&nbsp; Incoming SWE @ Nuro</p>
+        <p class="subtitle">M.S.E. Computer Science · UPenn &nbsp;·&nbsp; Incoming Autonomy SWE @ Nuro</p>
         <div class="links" style="margin-top:0.65em;">
           <a href="https://www.linkedin.com/in/john-tappen/" target="_blank">LinkedIn</a>
           <a href="https://github.com/jtappen1" target="_blank">GitHub</a>
@@ -383,7 +389,7 @@
   <div class="section fade">
     <h2>About</h2>
     <p>
-      I'm pursuing my Master's in Computer Science at the University of Pennsylvania, specializing in Computer Vision & Machine Learning. This summer I'll be joining <a href="https://nuro.ai" target="_blank">Nuro</a> as a SWE Intern on the Compute Platform team. I also conduct research on off-road autonomous driving and racing with <a href="https://xlab.upenn.edu/" target="_blank">xLAB</a> in the <a href="https://www.grasp.upenn.edu/" target="_blank">GRASP Lab</a>, advised by Professor <a href="https://xlab.upenn.edu/team/rahul/" target="_blank">Rahul Mangharam</a>.
+      I'm pursuing my Master's in Computer Science at the University of Pennsylvania, focusing on Machine Learning, Robotics, and Computer Vision. I'll be joining <a href="https://nuro.ai" target="_blank">Nuro</a> as a Software Engineer on the Autonomy team. At Penn I conduct research on safety-critical autonomous systems with the <a href="https://xlab.upenn.edu/" target="_blank">xLAB</a> in the <a href="https://www.grasp.upenn.edu/" target="_blank">GRASP Lab</a>, advised by Professor <a href="https://xlab.upenn.edu/team/rahul/" target="_blank">Rahul Mangharam</a>.
     </p>
     <br>
     <p>
@@ -398,38 +404,6 @@
       <span class="tag">ML Optimization</span>
       <span class="tag">SLAM</span>
       <span class="tag">Large-scale Distributed Systems</span>
-    </div>
-  </div>
-
-  <hr>
-
-  <!-- Education -->
-  <div class="section fade">
-    <h2>Education</h2>
-    <div class="edu-row">
-      <div class="edu-item">
-        <p class="school">University of Pennsylvania</p>
-        <p class="degree">M.S.E. in Computer Science</p>
-        <p class="dates">2025 – 2027</p>
-        <p style="font-size:0.8rem; color:#555550;">Focus: CV & Machine Learning &nbsp;·&nbsp; GPA: 3.6</p>
-        <div class="tags" style="margin-top:0.5em;">
-          <span class="tag">Computer Vision</span>
-          <span class="tag">Robotics</span>
-          <span class="tag">RL</span>
-          <span class="tag">ML</span>
-        </div>
-      </div>
-      <div class="edu-item">
-        <p class="school">Brigham Young University</p>
-        <p class="degree">B.S. in Computer Science</p>
-        <p class="dates">2019 – 2024</p>
-        <p style="font-size:0.8rem; color:#555550;">Focus: AI & NLP &nbsp;·&nbsp; GPA: 3.9</p>
-        <div class="tags" style="margin-top:0.5em;">
-          <span class="tag">NLP</span>
-          <span class="tag">ML</span>
-          <span class="tag">Algorithms</span>
-        </div>
-      </div>
     </div>
   </div>
 
@@ -488,6 +462,49 @@
 
       <div class="project-card">
         <div class="project-media">
+          <video autoplay loop muted playsinline data-loop-end="5">
+            <source src="images/videos/x30-walking.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="project-content">
+          <div class="project-card-header">
+            <span class="project-name">Autonomous Navigation on the DEEP Robotics X30</span>
+            <a href="https://github.com/mlab-upenn/X30_dev" class="project-link" target="_blank">GitHub ↗</a>
+          </div>
+          <p>Developing an autonomous multi-terrain navigation stack for the DEEP Robotics X30.</p>
+          <div class="tags">
+            <span class="tag tag-status">In Progress</span>
+            <span class="tag">Autonomous Navigation</span>
+            <span class="tag">Perception</span>
+            <span class="tag">Legged Robots</span>
+            <span class="tag">Planning</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-media">
+          <video autoplay loop muted playsinline>
+            <source src="images/videos/lite3_ascent.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="project-content">
+          <div class="project-card-header">
+            <span class="project-name">Depth-Conditioned Locomotion Policies on the DEEP Robotics Lite3</span>
+            <a href="https://github.com/jtappen1/rl_training" class="project-link" target="_blank">GitHub ↗</a>
+          </div>
+          <p>Developed a perceptive policy that lets the Lite3 quadruped ascend rough terrain, slopes, stairs, and steep obstacles. Combined onboard depth/height-map sensing with an RL controller trained via terrain curriculum.</p>
+          <div class="tags">
+            <span class="tag">Reinforcement Learning</span>
+            <span class="tag">Perception</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">Sim-to-Real</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-media">
           <video autoplay loop muted playsinline>
             <source src="images/videos/f1:5th-offroad.mp4" type="video/mp4">
           </video>
@@ -528,25 +545,6 @@
         </div>
       </div>
 
-      <div class="project-card">
-        <div class="project-media">
-           <img src="images/care.jpeg" alt="Butlr Care"/>
-        </div>
-        <div class="project-content">
-          <div class="project-card-header">
-            <span class="project-name">Butlr Care</span>
-            <a href="https://www.butlr.com/solutions/care" class="project-link">Website ↗</a>
-          </div>
-          <p>Helped develop an anonymous trajectory tracking system and simulator using Kalman filters for senior living facilities.  Later worked on a CV based detection algo to capture boundary crossings.</p>
-          <div class="tags">
-            <span class="tag">Kalman Filters</span>
-            <span class="tag">Python</span>
-            <span class="tag">Signal Processing</span>
-            <span class="tag">Ray.io</span>
-          </div>
-        </div>
-      </div>
-
     </div>
 
     <!-- Hidden extra projects — add yours here -->
@@ -570,6 +568,25 @@
             <span class="tag">PyTorch</span>
             <span class="tag">MPC</span>
             <span class="tag">Sensor Fusion</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-media">
+           <img src="images/care.jpeg" alt="Butlr Care"/>
+        </div>
+        <div class="project-content">
+          <div class="project-card-header">
+            <span class="project-name">Butlr Care</span>
+            <a href="https://www.butlr.com/solutions/care" class="project-link">Website ↗</a>
+          </div>
+          <p>Helped develop an anonymous trajectory tracking system and simulator using Kalman filters for senior living facilities.  Later worked on a CV based detection algo to capture boundary crossings.</p>
+          <div class="tags">
+            <span class="tag">Kalman Filters</span>
+            <span class="tag">Python</span>
+            <span class="tag">Signal Processing</span>
+            <span class="tag">Ray.io</span>
           </div>
         </div>
       </div>
@@ -599,6 +616,38 @@
 
   <hr>
 
+  <!-- Education -->
+  <div class="section fade">
+    <h2>Education</h2>
+    <div class="edu-row">
+      <div class="edu-item">
+        <p class="school">University of Pennsylvania</p>
+        <p class="degree">M.S.E. in Computer Science</p>
+        <p class="dates">2025 – 2027</p>
+        <p style="font-size:0.8rem; color:#555550;">Focus: CV & Machine Learning &nbsp;·&nbsp; GPA: 3.6</p>
+        <div class="tags" style="margin-top:0.5em;">
+          <span class="tag">Computer Vision</span>
+          <span class="tag">Robotics</span>
+          <span class="tag">RL</span>
+          <span class="tag">ML</span>
+        </div>
+      </div>
+      <div class="edu-item">
+        <p class="school">Brigham Young University</p>
+        <p class="degree">B.S. in Computer Science</p>
+        <p class="dates">2019 – 2024</p>
+        <p style="font-size:0.8rem; color:#555550;">Focus: AI & NLP &nbsp;·&nbsp; GPA: 3.9</p>
+        <div class="tags" style="margin-top:0.5em;">
+          <span class="tag">NLP</span>
+          <span class="tag">ML</span>
+          <span class="tag">Algorithms</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
   <!-- Contact -->
   <div class="section fade">
     <h2>Contact</h2>
@@ -620,6 +669,26 @@
       panel.classList.toggle('open');
       btn.textContent = isOpen ? 'See more ↓' : 'See less ↑';
     }
+
+    // Make each project card open its project link when clicked
+    document.querySelectorAll('.project-card').forEach(card => {
+      const link = card.querySelector('.project-link');
+      if (!link || link.getAttribute('href') === '#') return;
+      card.classList.add('clickable');
+      card.addEventListener('click', e => {
+        if (e.target.closest('a')) return;
+        const newTab = link.target === '_blank' || e.metaKey || e.ctrlKey;
+        window.open(link.href, newTab ? '_blank' : '_self');
+      });
+    });
+
+    // Loop only the first N seconds of videos with data-loop-end
+    document.querySelectorAll('video[data-loop-end]').forEach(v => {
+      const end = parseFloat(v.dataset.loopEnd);
+      v.addEventListener('timeupdate', () => {
+        if (v.currentTime >= end) { v.currentTime = 0; v.play(); }
+      });
+    });
   </script>
 
 </body>
